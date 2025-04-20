@@ -9,7 +9,9 @@ const Footer = () => {
           © 2024 TechStack Showcase. All rights reserved.
         </p>
         <p className="text-gray-500 text-sm mt-2">
-          备案号：粤ICP备14088510号-6
+          <a href="https://beian.miit.gov.cn" >
+            备案号：粤ICP备14088510号-6
+          </a>
         </p>
       </div>
     </footer>
