@@ -14,9 +14,9 @@ const TrendsSection = () => {
   ];
 
   return (
-    <section id="trends" className="min-h-screen p-8">
+    <section id="trends" className="py-16">
       <SectionTitle title="Technology Trends" subtitle="The future of software development" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {trends.map((trend) => (
           <TechCard
             key={trend.name}
@@ -24,6 +24,7 @@ const TrendsSection = () => {
             description={trend.description}
             icon={trend.icon}
             level={trend.level}
+            category="trends"
           />
         ))}
       </div>

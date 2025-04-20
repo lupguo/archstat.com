@@ -14,9 +14,9 @@ const DevOpsSection = () => {
   ];
 
   return (
-    <section id="devops" className="min-h-screen p-8 bg-gray-50">
+    <section id="devops" className="py-16 bg-gray-50">
       <SectionTitle title="DevOps" subtitle="Tools and practices for modern software delivery" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {devops.map((tool) => (
           <TechCard
             key={tool.name}
@@ -24,6 +24,7 @@ const DevOpsSection = () => {
             description={tool.description}
             icon={tool.icon}
             level={tool.level}
+            category="devops"
           />
         ))}
       </div>

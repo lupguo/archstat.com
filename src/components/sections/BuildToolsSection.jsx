@@ -14,9 +14,9 @@ const BuildToolsSection = () => {
   ];
 
   return (
-    <section id="buildtools" className="min-h-screen p-8">
+    <section id="buildtools" className="py-16">
       <SectionTitle title="Build Tools" subtitle="Essential tools for modern development workflow" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {tools.map((tool) => (
           <TechCard
             key={tool.name}
@@ -24,6 +24,7 @@ const BuildToolsSection = () => {
             description={tool.description}
             icon={tool.icon}
             level={tool.level}
+            category="buildtools"
           />
         ))}
       </div>

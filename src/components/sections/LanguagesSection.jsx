@@ -14,9 +14,9 @@ const LanguagesSection = () => {
   ];
 
   return (
-    <section id="languages" className="min-h-screen p-8">
+    <section id="languages" className="py-16">
       <SectionTitle title="Programming Languages" subtitle="Core technologies that power modern software" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {languages.map((lang) => (
           <TechCard
             key={lang.name}
@@ -24,6 +24,7 @@ const LanguagesSection = () => {
             description={lang.description}
             icon={lang.icon}
             level={lang.level}
+            category="languages"
           />
         ))}
       </div>

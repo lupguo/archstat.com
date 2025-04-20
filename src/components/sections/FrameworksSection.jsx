@@ -14,9 +14,9 @@ const FrameworksSection = () => {
   ];
 
   return (
-    <section id="frameworks" className="min-h-screen p-8 bg-gray-50">
+    <section id="frameworks" className="py-16 bg-gray-50">
       <SectionTitle title="Frameworks & Libraries" subtitle="Building blocks for modern applications" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {frameworks.map((framework) => (
           <TechCard
             key={framework.name}
@@ -24,6 +24,7 @@ const FrameworksSection = () => {
             description={framework.description}
             icon={framework.icon}
             level={framework.level}
+            category="frameworks"
           />
         ))}
       </div>
