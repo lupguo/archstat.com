@@ -6,7 +6,8 @@ export const techCategories = {
     { id: 3, name: 'Java', popularity: 85, yearCreated: 1995 },
     { id: 4, name: 'TypeScript', popularity: 88, yearCreated: 2012 },
     { id: 5, name: 'Go', popularity: 75, yearCreated: 2009 },
-    { id: 6, name: 'Rust', popularity: 70, yearCreated: 2010 }
+    { id: 6, name: 'Rust', popularity: 70, yearCreated: 2010 },
+    { id: 7, name: 'TypeScript', popularity: 70, yearCreated: 2010 }
   ],
   frameworks: [
     { id: 1, name: 'React', category: 'Frontend', popularity: 95 },
